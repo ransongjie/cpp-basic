@@ -3,7 +3,7 @@ bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
-
+cmake-build-debug/
 lib/
 out/
 # Other files and folders

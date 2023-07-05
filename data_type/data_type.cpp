@@ -1,9 +1,14 @@
 #include <iostream>
 #include <ctime>//日期时间
 using namespace std;
+
+//预定义常量
+#define cb 10
+
 /*
  变量，常量
  类型分类, 类型范围, 字面量, 默认值, 类型转换
+ ！精度，溢出
  */
 int main(){
     //整数
@@ -30,6 +35,9 @@ int main(){
     signed char sf='x';
     unsigned char uf='x';
 
+    //常量
+    const int ca=10;
+
     //数组
     int gs0[3];//空间已分配，未赋值
     int gs1[3]={};//全部赋值为0
@@ -38,8 +46,14 @@ int main(){
     cout<<gs1[2]<<endl;
 
     //字符串
+    //c++
     string str1="xcrj";
     cout<<str1.size()<<endl;//输出4
+    //c
+    char str2[] = "xcrj";
+    cout<<str2<<endl;
+    char str3[] = {'x','c','r','j','\0'};//必须加上\0
+    cout<<str3<<endl;
 
     //日期时间
     time_t now=time(0);//格林尼治时间, 格林尼治标准时间1970年1月1日00:00:00至当前时刻所流逝的秒数。
